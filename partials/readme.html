@@ -1,36 +1,26 @@
 <h2 id="angular-morris-chart-build-status-https-travis-ci-org-stewones-angular-morris-chart-svg-https-travis-ci-org-stewones-angular-morris-chart-">angular-morris-chart <a href="https://travis-ci.org/stewones/angular-morris-chart"><img src="https://travis-ci.org/stewones/angular-morris-chart.svg" alt="Build Status"></a></h2>
-<h3 id="installation">Installation</h3>
-<p>install <code>angular-morris-chart</code> by bower or npm running the following command</p>
+<p>A module with directives to easy use of <a href="http://morrisjs.github.io/morris.js/">morris</a> with angular </p>
+<h2 id="installation">Installation</h2>
+<p>Install <code>angular-morris-chart</code> through</p>
+<h4 id="bower-npm">Bower/NPM</h4>
 <pre><code class="lang-shell">$ bower install angular-morris-chart --save
 or
 $ npm install angular-morris-chart --save
 </code></pre>
-<p>or download <a href="https://raw.githubusercontent.com/stewones/angular-morris-chart/master/src/angular-morris-chart.min.js">here</a></p>
-<p>then append <code>angular-morris-chart.min.js</code> in to end of body, before your project, after the <code>angular</code> and the other libs.</p>
-<pre><code class="lang-html">&lt;!--using bower--&gt;
-...
-...
-&lt;script src=&quot;../bower_components/angular-morris-chart/src/angular-morris-chart.min.js&quot;&gt;&lt;/script&gt;
-...
-...
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<pre><code class="lang-html">&lt;!--using npm--&gt;
-...
-...
-&lt;script src=&quot;../node_modules/angular-morris-chart/src/angular-morris-chart.min.js&quot;&gt;&lt;/script&gt;
-...
-...
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<p>add <code>angular.morris-chart</code> as a module dependency for your app</p>
+<h4 id="download">Download</h4>
+<p><a href="https://raw.githubusercontent.com/stewones/angular-morris-chart/master/src/angular-morris-chart.min.js">From master branch</a></p>
+<h4 id="cdn">CDN</h4>
+<p>Minified version:
+<a href="https://cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.min.js">https://cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.min.js</a></p>
+<p>Full version:
+<a href="https://cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.js">https://cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.js</a></p>
+<p><br />
+Then add <code>angular.morris-chart</code> as a module dependency for your angular app</p>
 <pre><code class="lang-js">angular.module(&#39;my.app&#39;, [
     &#39;angular.morris-chart&#39;
 ])
 </code></pre>
-<h3 id="usage">Usage</h3>
+<h2 id="usage">Usage</h2>
 <p>There are four directives based on <code>morris.js</code></p>
 <ul>
 <li><code>bar-chart</code></li>
@@ -38,50 +28,12 @@ $ npm install angular-morris-chart --save
 <li><code>donut-chart</code></li>
 <li><code>area-chart</code></li>
 </ul>
-<p>Check out <a href="https://angular-morris-chart.stpa.co">documentation</a> for live examples</p>
-<h3 id="development">Development</h3>
-<ul>
-<li>install node and bower on your environment</li>
-</ul>
-<p>cd to your desired folder and clone <code>angular-morris-chart</code> repository</p>
-<pre><code class="lang-sh">$ git clone https://github.com/stewones/angular-morris-chart
-$ cd angular-morris-chart
-</code></pre>
-<p>install all project dependencies</p>
-<pre><code class="lang-sh">$ npm install
-$ bower install
-</code></pre>
-<p>serve lib/docs with live reload</p>
-<pre><code class="lang-sh">#this serves docs on `http://localhost:3000` with live reload
-$ gulp serve
-</code></pre>
-<p>serve lib/docs on distribution mode</p>
-<pre><code class="lang-sh">#same above but with minified sources for distribution
-$ gulp serve:dist
-</code></pre>
-<p>build all to distribution</p>
-<pre><code class="lang-sh">#this generates minified src at `src/angular-morris-chart.min.js`, and docs on `dist/doc` folder.
-$ gulp build
-</code></pre>
-<p>serve tests</p>
-<pre><code class="lang-sh">#run unit test with karma
-$ gulp test
-</code></pre>
-<p>serve automated tests</p>
-<pre><code class="lang-sh">#unit test with live reload
-$ gulp test:auto
-</code></pre>
+<p>Checkout <a href="https://angular-morris-chart.stpa.co">documentation</a> for live examples</p>
 <hr>
 <p><strong>Notes:</strong></p>
 <ul>
-<li><p>To contribute with this awesome project, just open an issue, then fork the project and make a new branch to do your work.</p>
-</li>
-<li><p>Run <code>gulp build</code> before make your PR. </p>
-</li>
-<li><p>To update docs site, just make another PR on <code>gh-pages</code> branch with only content generated in <code>dist/doc</code>. Please make sure that all tests are passing by <code>gulp test</code>. Verify all the tasks located on gulp folder for more details.</p>
-</li>
-<li><p><a href="https://github.com/stewones/angular-morris-chart/releases">Changelog</a></p>
-</li>
+<li>To contribute just read <a href="https://github.com/stewones/angular-morris-chart/blob/master/CONTRIBUTING.md">this file</a> before</li>
+<li>Verify the changes in <a href="https://github.com/stewones/angular-morris-chart/releases">changelog</a></li>
 </ul>
 <h2 id="contributors">Contributors</h2>
 <table>
