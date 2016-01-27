@@ -13,8 +13,16 @@
 <a href="https://cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.min.js">https://cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.min.js</a></p>
 <p>Full version:
 <a href="https://cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.js">https://cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.js</a></p>
-<p><br />
-Then add <code>angular.morris-chart</code> as a module dependency for your angular app</p>
+<p><br /></p>
+<h2 id="add-morris-js-and-its-dependencies">Add morris.js and its dependencies</h2>
+<p>jQuery &amp; Raphaël to your page</p>
+<pre><code>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js&quot;&gt;&lt;/script&gt;
+</code></pre><h2 id="add-our-module">Add our module</h2>
+<pre><code>&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.min.js&quot;&gt;&lt;/script&gt;
+</code></pre><h2 id="inject-dependency">Inject dependency</h2>
+<p>Make sure you injected <code>angular.morris-chart</code> into your angular app</p>
 <pre><code class="lang-js">angular.module(&#39;my.app&#39;, [
     &#39;angular.morris-chart&#39;
 ])
@@ -27,12 +35,14 @@ Then add <code>angular.morris-chart</code> as a module dependency for your angul
 <li><code>donut-chart</code></li>
 <li><code>area-chart</code></li>
 </ul>
-<p>Checkout <a href="https://angular-morris-chart.stpa.co">documentation</a> for live examples</p>
+<p><a href="https://jsfiddle.net/stewones/n6aaLckb/">Working fiddle</a> sample</p>
+<p>Checkout <a href="https://angular-morris-chart.stpa.co">our documentation</a> for others examples</p>
 <hr>
 <p><strong>Notes:</strong></p>
 <ul>
 <li>To contribute just read <a href="https://github.com/stewones/angular-morris-chart/blob/master/CONTRIBUTING.md">this file</a> before</li>
 <li>Verify the changes in <a href="https://github.com/stewones/angular-morris-chart/releases">changelog</a></li>
+<li>Look <a href="http://morrisjs.github.io/morris.js/">Morris documentation</a> to check api</li>
 </ul>
 <h2 id="contributors">Contributors</h2>
 <table>
