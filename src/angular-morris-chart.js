@@ -165,11 +165,6 @@
 
                                 scope.areaInstance = new Morris.Area(options);
                             } else {
-                                scope.areaInstance.options.xkey = scope.areaXkey;
-                                scope.areaInstance.options.ykeys = scope.areaYkeys;
-                                scope.areaInstance.options.labels = scope.areaLabels;
-                                scope.areaInstance.options.parseTime = scope.parseTime;
-                                scope.areaInstance.options.lineColors = scope.lineColors || ['#0b62a4', '#7a92a3', '#4da74d', '#afd8f8', '#edc240', '#cb4b4b', '#9440ed'];
                                 scope.areaInstance.setData(scope.areaData);
                             }
                         }
@@ -255,10 +250,6 @@
 
                             scope.barInstance = new Morris.Bar(options);
                         } else {
-                            scope.barInstance.options.xkey = scope.barX;
-                            scope.barInstance.options.ykeys = scope.barY;
-                            scope.barInstance.options.labels = scope.barLabels;
-                            scope.barInstance.options.barColors = scope.barColors || ['#0b62a4', '#7a92a3', '#4da74d', '#afd8f8', '#edc240', '#cb4b4b', '#9440ed'];
                             scope.barInstance.setData(scope.barData);
                         }
                     }
@@ -411,6 +402,8 @@
                                 scope.lineInstance.options.xkey = scope.lineXkey;
                                 scope.lineInstance.options.ykeys = scope.lineYkeys;
                                 scope.lineInstance.options.labels = scope.lineLabels;
+                                scope.lineInstance.options.preUnits = scope.linePreUnits;
+                                scope.lineInstance.options.postUnits = scope.linePostUnits;
                                 scope.lineInstance.options.parseTime = scope.parseTime;
                                 scope.lineInstance.options.lineColors = scope.lineColors || ['#0b62a4', '#7a92a3', '#4da74d', '#afd8f8', '#edc240', '#cb4b4b', '#9440ed'];
                                 scope.lineInstance.setData(scope.lineData);
